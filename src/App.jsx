@@ -1,19 +1,15 @@
-import { useState } from 'react';
-import danone from './assets/danone-logo-rectangle.jpeg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './Login';
+import PlantManagementSystem from './PlantManagementSystem';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={danone} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Danone</h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/main" element={<PlantManagementSystem />} />
+      </Routes>
+    </Router>
   );
 }
 

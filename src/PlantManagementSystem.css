@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Brushup";
+  src: url("./fonts/Brushup.otf") format("opentype");
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("./assets/background-full-page.png") lightgray 50% / cover no-repeat;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: "Brushup", sans-serif;
+}
+
+.logo {
+  width: 176px;
+  height: 86px;
+  flex-shrink: 0;
+}
+
+.title {
+  display: flex;
+  width: 739px;
+  height: 91px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: "Brushup", sans-serif;
+  color: var(--primary-pantone-300, #005EB8);
+  /* Primary title */
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  width: 142.222px;
+  height: 66px;
+  padding: 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.profile-button,
+.logout-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.navbar {
+  width: 200px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}

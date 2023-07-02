@@ -1,0 +1,35 @@
+body {
+    width: 100vw; /* Use viewport width as width */
+    height: 100vh; /* Use viewport height as height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: url("/src/assets/danone-texture-p-300-rgbrt-1.png"), lightgray 50% / cover no-repeat;
+    margin: 0;
+  }
+  
+  .input, .button {
+    width: 300px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    padding: 0 20px;
+    font-size: 18px; /* Adjust the font size */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    color: #000;
+    font-family: 'Brush Up', sans-serif; 
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .button {
+    display: block;
+    background: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
